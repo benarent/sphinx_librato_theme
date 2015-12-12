@@ -82,11 +82,13 @@
 <body class="wy-body-for-nav" role="document">
   <div class="librato-header">
     <img src="https://www.librato.com/images/librato-solarwind-logo.svg" class="logo"/>
-    <a href="">product</a>
-    <a href="">customers</a>
-    <a href="">pricing</a>
-    <a href="">developers</a>
-    <a href="">blog</a>
+    <div>
+      <a href="">product</a>
+      <a href="">customers</a>
+      <a href="">pricing</a>
+      <a href="">developers</a>
+      <a href="">blog</a>
+    </div>
    </div>
     <div class="wy-grid-for-nav">
 
@@ -108,17 +110,6 @@
           {% endif %}
           </a>
 
-          {% if theme_display_version %}
-            {%- set nav_version = version %}
-            {% if READTHEDOCS and current_version %}
-              {%- set nav_version = current_version %}
-            {% endif %}
-            {% if nav_version %}
-              <div class="version">
-                {{ nav_version }}
-              </div>
-            {% endif %}
-          {% endif %}
 
           {% include "searchbox.html" %}
 
