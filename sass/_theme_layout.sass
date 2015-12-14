@@ -8,11 +8,18 @@
   float: right
   padding-top: 10px
   padding-right: 20px
+  li
+    display: inline-block
   a
-    color: $white
+    color: #999999
     padding-right: 10px
+    font-size: 15px
+    position: relative
+    display: block
+    padding: 10px 15px
+    +font-smooth
     &:hover
-      color: darken($menu-vertical-background-color, 15%)
+      color: lighten($menu-vertical-background-color, 15%)
 
 .logo
   width: 190px
@@ -194,7 +201,7 @@
   margin-bottom: $gutter / 2
   z-index: $z-index-popover
   background-color: $nav-search-background-color
-  text-align: center
+  text-align: left
   padding: $gutter / 2
   display: block
   color: $nav-search-color

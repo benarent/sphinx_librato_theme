@@ -328,7 +328,7 @@ big, small {
     page-break-after: avoid;
   }
 }
-.fa:before, .wy-menu-vertical li span.toctree-expand:before, .wy-menu-vertical li.on a span.toctree-expand:before, .wy-menu-vertical li.current > a span.toctree-expand:before, .rst-content .admonition-title:before, .rst-content h1 .headerlink:before, .rst-content h2 .headerlink:before, .rst-content h3 .headerlink:before, .rst-content h4 .headerlink:before, .rst-content h5 .headerlink:before, .rst-content h6 .headerlink:before, .rst-content dl dt .headerlink:before, .rst-content p.caption .headerlink:before, .rst-content tt.download span:first-child:before, .rst-content code.download span:first-child:before, .icon:before, .wy-dropdown .caret:before, .wy-inline-validate.wy-inline-validate-success .wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .wy-alert, .rst-content .note, .rst-content .attention, .rst-content .caution, .rst-content .danger, .rst-content .error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .warning, .rst-content .seealso, .rst-content .admonition-todo, .btn, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a, .wy-side-nav-search > a, .wy-side-nav-search .wy-dropdown > a, .wy-nav-top a {
+.fa:before, .wy-menu-vertical li span.toctree-expand:before, .wy-menu-vertical li.on a span.toctree-expand:before, .wy-menu-vertical li.current > a span.toctree-expand:before, .rst-content .admonition-title:before, .rst-content h1 .headerlink:before, .rst-content h2 .headerlink:before, .rst-content h3 .headerlink:before, .rst-content h4 .headerlink:before, .rst-content h5 .headerlink:before, .rst-content h6 .headerlink:before, .rst-content dl dt .headerlink:before, .rst-content p.caption .headerlink:before, .rst-content tt.download span:first-child:before, .rst-content code.download span:first-child:before, .icon:before, .wy-dropdown .caret:before, .wy-inline-validate.wy-inline-validate-success .wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .wy-alert, .rst-content .note, .rst-content .attention, .rst-content .caution, .rst-content .danger, .rst-content .error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .warning, .rst-content .seealso, .rst-content .admonition-todo, .btn, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .header-menu a, .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a, .wy-side-nav-search > a, .wy-side-nav-search .wy-dropdown > a, .wy-nav-top a {
   -webkit-font-smoothing: antialiased;
 }
 
@@ -2695,10 +2695,7 @@ button[disabled] {
 
 .btn {
   display: inline-block;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 0px;
+  border-radius: 4px;
   line-height: normal;
   white-space: nowrap;
   text-align: center;
@@ -2754,6 +2751,30 @@ button[disabled] {
   box-shadow: none;
 }
 
+.btn-librato-marketing {
+  background-color: #0f80aa;
+  color: #fff !important;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  text-align: center;
+  margin-right: 10px;
+  padding: 7px 20px !important;
+}
+
+.btn-librato-marketing-yellow {
+  background-color: #DCAF1B;
+  color: #fff !important;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  text-align: center;
+  margin-right: 10px;
+  padding: 7px 20px !important;
+}
+
 .btn-disabled {
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -2800,12 +2821,12 @@ button[disabled] {
 }
 
 .btn-librato {
-  background-color: #337AB7 !important;
+  background-color: #0f80aa !important;
   color: #ffffff !important;
   border: none;
 }
 .btn-librato:hover {
-  background-color: #2d6da3 !important;
+  background-color: #0d6e93 !important;
   color: #ffffff;
 }
 .btn-librato:visited {
@@ -4215,12 +4236,19 @@ div[class^='highlight'] pre {
   padding-top: 10px;
   padding-right: 20px;
 }
+.header-menu li {
+  display: inline-block;
+}
 .header-menu a {
-  color: #fff;
+  color: #999999;
   padding-right: 10px;
+  font-size: 15px;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
 }
 .header-menu a:hover {
-  color: #d6d6d6;
+  color: white;
 }
 
 .logo {
@@ -4434,7 +4462,7 @@ div[class^='highlight'] pre {
   margin-bottom: 0.809em;
   z-index: 200;
   background-color: #2980B9;
-  text-align: center;
+  text-align: left;
   padding: 0.809em;
   display: block;
   color: #fcfcfc;

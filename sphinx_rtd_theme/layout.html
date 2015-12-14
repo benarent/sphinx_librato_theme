@@ -83,13 +83,15 @@
   <div class="librato-header">
     <img src="https://www.librato.com/images/librato-solarwind-logo.svg" class="logo"/>
     <div class="header-menu">
-      <a href="#">product</a>
-      <a href="#">customers</a>
-      <a href="#">pricing</a>
-      <a href="#">developers</a>
-      <a href="#">blog</a>
-      <a href="#">sign in</a>
-      <a href="#">try it</a>
+      <ul>
+        <li><a href="#">product</a></li>
+        <li><a href="#">customers</a></li>
+        <li><a href="#">pricing</a></li>
+        <li><a href="#">developers</a></li>
+        <li><a href="#">blog</a></li>
+        <li><a href="#" class="btn-librato-marketing">sign in</a></li>
+        <li><a href="#" class="btn-librato-marketing-yellow">try it</a></li>
+      </ul>
     </div>
    </div>
     <div class="wy-grid-for-nav">
@@ -99,13 +101,13 @@
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search">
           {% block sidebartitle %}
-
+          
           {% if logo and theme_logo_only %}
             <a href="{{ pathto(master_doc) }}">
           {% else %}
             <a href="{{ pathto(master_doc) }}" class="icon icon-home"> {{ project }}
           {% endif %}
-
+          
           {% if logo %}
             {# Not strictly valid HTML, but it's the only way to display/scale it properly, without weird scripting or heaps of work #}
             <img src="{{ pathto('_static/' + logo, 1) }}" class="logo" />
