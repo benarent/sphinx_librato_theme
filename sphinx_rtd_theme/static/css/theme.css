@@ -2694,9 +2694,11 @@ button[disabled] {
 }
 
 .btn {
-  /* Structure */
   display: inline-block;
-  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 0px;
   line-height: normal;
   white-space: nowrap;
   text-align: center;
@@ -2709,7 +2711,6 @@ button[disabled] {
   text-decoration: none;
   font-weight: normal;
   font-family: "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
-  box-shadow: 0px 1px 2px -1px rgba(255, 255, 255, 0.5) inset, 0px -2px 0px 0px rgba(0, 0, 0, 0.1) inset;
   outline-none: false;
   vertical-align: middle;
   *display: inline;
@@ -2796,6 +2797,19 @@ button[disabled] {
 }
 .btn-neutral:visited {
   color: #404040 !important;
+}
+
+.btn-librato {
+  background-color: #337AB7 !important;
+  color: #ffffff !important;
+  border: none;
+}
+.btn-librato:hover {
+  background-color: #2d6da3 !important;
+  color: #ffffff;
+}
+.btn-librato:visited {
+  color: #ffffff !important;
 }
 
 .btn-success {
