@@ -1,5 +1,26 @@
 var jQuery = (typeof(window) != 'undefined') ? window.jQuery : require('jquery');
 
+var mainBar = document.getElementById("mainheader");
+var mainBar_h = mainBar.offsetHeight;
+
+update_pos = function()
+    {
+        
+        if (document.body.scrollTop > mainBar_h )
+        {
+            navside.style.position = "fixed";
+            navside.style.top = "0";
+        }
+        else
+        {
+            navside.style.position = "absolute";
+            navside.style.top = "";
+        }
+        
+    }
+
+document.addEventListener ("scroll", update_pos);
+
 // Sphinx theme nav state
 function ThemeNav () {
 

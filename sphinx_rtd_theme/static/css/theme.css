@@ -4562,8 +4562,7 @@ div[class^='highlight'] pre {
 }
 
 .wy-nav-side {
-  position: fixed;
-  top: 80px;
+  position: absolute;
   bottom: 0;
   left: 0;
   padding-bottom: 2em;
