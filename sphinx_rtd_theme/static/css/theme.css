@@ -2694,8 +2694,9 @@ button[disabled] {
 }
 
 .btn {
+  /* Structure */
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 2px;
   line-height: normal;
   white-space: nowrap;
   text-align: center;
@@ -2708,6 +2709,7 @@ button[disabled] {
   text-decoration: none;
   font-weight: normal;
   font-family: "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
+  box-shadow: 0px 1px 2px -1px rgba(255, 255, 255, 0.5) inset, 0px -2px 0px 0px rgba(0, 0, 0, 0.1) inset;
   outline-none: false;
   vertical-align: middle;
   *display: inline;
@@ -2749,30 +2751,6 @@ button[disabled] {
   opacity: 0.4;
   cursor: not-allowed;
   box-shadow: none;
-}
-
-.btn-librato-marketing {
-  background-color: #0f80aa;
-  color: #fff !important;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 0px;
-  text-align: center;
-  margin-right: 10px;
-  padding: 7px 20px !important;
-}
-
-.btn-librato-marketing-yellow {
-  background-color: #DCAF1B;
-  color: #fff !important;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 0px;
-  text-align: center;
-  margin-right: 10px;
-  padding: 7px 20px !important;
 }
 
 .btn-disabled {
@@ -2818,19 +2796,6 @@ button[disabled] {
 }
 .btn-neutral:visited {
   color: #404040 !important;
-}
-
-.btn-librato {
-  background-color: #0f80aa !important;
-  color: #ffffff !important;
-  border: none;
-}
-.btn-librato:hover {
-  background-color: #0d6e93 !important;
-  color: #ffffff;
-}
-.btn-librato:visited {
-  color: #ffffff !important;
 }
 
 .btn-success {
@@ -4470,7 +4435,7 @@ div[class^='highlight'] pre {
 }
 .wy-side-nav-search input[type=text] {
   width: 100%;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 6px 12px;
   border-color: #2472a4;
 }
@@ -5194,7 +5159,21 @@ span[id*='MathJax-Span'] {
   font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 400;
-  src: local("Proxima Nova"), local("ProximaNova-Reg-webfont"), url(../fonts/ProximaNova-Red-webfont.ttf) format("truetype");
+  src: local("Proxima Nova"), local("ProximaNova-Reg-webfont"), url(../fonts/proxima_nova/ProximaNova-Red-webfont.ttf) format("truetype");
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 100;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2, .rst-content .toctree-wrapper p.caption {
+  font-weight: 100;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*# sourceMappingURL=theme.css.map */
