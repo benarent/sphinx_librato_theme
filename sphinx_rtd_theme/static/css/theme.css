@@ -4347,19 +4347,23 @@ div[class^='highlight'] pre {
   display: block;
 }
 .wy-menu-vertical li.toctree-l2.current > a {
-  background: #E6B71D;
+  background: #DCDCDC;
   padding: 0.4045em 2.427em;
+  color: #6F6F6F;
+  font-weight: 100;
 }
 .wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a {
   display: block;
-  background: #E6B71D;
+  color: #555;
+  background: #edf0f2;
   padding: 0.4045em 4.045em;
+  font-weight: 100;
 }
 .wy-menu-vertical li.toctree-l2 a:hover span.toctree-expand {
   color: gray;
 }
 .wy-menu-vertical li.toctree-l2 span.toctree-expand {
-  color: #E6B71D;
+  color: #edf0f2;
 }
 .wy-menu-vertical li.toctree-l3 {
   font-size: 0.9em;
@@ -4370,7 +4374,6 @@ div[class^='highlight'] pre {
 }
 .wy-menu-vertical li.toctree-l3.current li.toctree-l4 > a {
   display: block;
-  background: #bdbdbd;
   padding: 0.4045em 5.663em;
   border-top: none;
   border-bottom: none;
@@ -4588,6 +4591,7 @@ div[class^='highlight'] pre {
   font-size: 30px;
   float: left;
   cursor: pointer;
+  padding-top: 11px;
 }
 
 .wy-nav-content-wrap {

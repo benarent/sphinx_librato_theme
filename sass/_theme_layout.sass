@@ -137,16 +137,20 @@
   li.toctree-l2
     &.current
       > a
-        background: $librato-yellow
+        background: #DCDCDC
         padding: $gutter / 4 $gutter * 1.5
+        color: #6F6F6F
+        font-weight: 100
       li.toctree-l3 > a
         display: block
-        background: $librato-yellow
+        color: #555
+        background: #edf0f2
         padding: $gutter / 4 $gutter * 2.5
+        font-weight: 100
     a:hover span.toctree-expand
       color: $menu-link-medium
     span.toctree-expand
-      color: $librato-yellow
+      color: #edf0f2
   li.toctree-l3
     font-size: .9em
     &.current
@@ -155,7 +159,6 @@
         padding: $gutter / 4 $gutter * 2.5
       li.toctree-l4 > a
         display: block
-        background: darken($menu-vertical-background-color, 25%)
         padding: $gutter / 4 $gutter * 3.5
         border-top: none
         border-bottom: none
@@ -340,6 +343,7 @@
     font-size: 30px
     float: left
     cursor: pointer
+    padding-top: 11px
 
 .wy-nav-content-wrap
   margin-left: $nav-desktop-width
