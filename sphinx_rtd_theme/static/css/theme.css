@@ -328,7 +328,7 @@ big, small {
     page-break-after: avoid;
   }
 }
-.fa:before, .wy-menu-vertical li span.toctree-expand:before, .wy-menu-vertical li.on a span.toctree-expand:before, .wy-menu-vertical li.current > a span.toctree-expand:before, .rst-content .admonition-title:before, .rst-content h1 .headerlink:before, .rst-content h2 .headerlink:before, .rst-content h3 .headerlink:before, .rst-content h4 .headerlink:before, .rst-content h5 .headerlink:before, .rst-content h6 .headerlink:before, .rst-content dl dt .headerlink:before, .rst-content p.caption .headerlink:before, .rst-content tt.download span:first-child:before, .rst-content code.download span:first-child:before, .icon:before, .wy-dropdown .caret:before, .wy-inline-validate.wy-inline-validate-success .wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .wy-alert, .rst-content .note, .rst-content .attention, .rst-content .caution, .rst-content .danger, .rst-content .error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .warning, .rst-content .seealso, .rst-content .admonition-todo, .btn, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .header-menu a, .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a, .wy-side-nav-search > a, .wy-side-nav-search .wy-dropdown > a, .wy-nav-top a {
+.fa:before, .wy-menu-vertical li span.toctree-expand:before, .wy-menu-vertical li.on a span.toctree-expand:before, .wy-menu-vertical li.current > a span.toctree-expand:before, .rst-content .admonition-title:before, .rst-content h1 .headerlink:before, .rst-content h2 .headerlink:before, .rst-content h3 .headerlink:before, .rst-content h4 .headerlink:before, .rst-content h5 .headerlink:before, .rst-content h6 .headerlink:before, .rst-content dl dt .headerlink:before, .rst-content p.caption .headerlink:before, .rst-content tt.download span:first-child:before, .rst-content code.download span:first-child:before, .icon:before, .wy-dropdown .caret:before, .wy-inline-validate.wy-inline-validate-success .wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .wy-alert, .rst-content .note, .rst-content .attention, .rst-content .caution, .rst-content .danger, .rst-content .error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .warning, .rst-content .seealso, .rst-content .admonition-todo, .btn, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .header-menu a, .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a, .wy-menu-vertical a, .wy-menu-vertical a:hover, .wy-menu-vertical a:active, .wy-side-nav-search > a, .wy-side-nav-search .wy-dropdown > a, .wy-nav-top a {
   -webkit-font-smoothing: antialiased;
 }
 
@@ -4277,6 +4277,10 @@ div[class^='highlight'] pre {
   font-size: 80%;
   color: #555;
   white-space: nowrap;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 100;
 }
 .wy-menu-vertical ul {
   margin-bottom: 0;
@@ -4296,7 +4300,7 @@ div[class^='highlight'] pre {
   padding: 0.4045em 2.427em;
 }
 .wy-menu-vertical li.current a:hover {
-  background: #d6d6d6;
+  background: #E6B71D;
 }
 .wy-menu-vertical li code, .wy-menu-vertical li .rst-content tt, .rst-content .wy-menu-vertical li tt {
   border: none;
@@ -4314,18 +4318,18 @@ div[class^='highlight'] pre {
   color: #4d4d4d;
 }
 .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a {
-  color: #404040;
-  padding: 0.4045em 1.618em;
+  color: #fff;
+  padding: 0.809em 1.618em;
   font-weight: bold;
   position: relative;
-  background: #fcfcfc;
+  background: #E6B71D;
   border: none;
   border-bottom: solid 1px #c9c9c9;
   border-top: solid 1px #c9c9c9;
   padding-left: 1.618em -4px;
 }
 .wy-menu-vertical li.on a:hover, .wy-menu-vertical li.current > a:hover {
-  background: #fcfcfc;
+  background: #E6B71D;
 }
 .wy-menu-vertical li.on a:hover span.toctree-expand, .wy-menu-vertical li.current > a:hover span.toctree-expand {
   color: gray;
@@ -4343,19 +4347,19 @@ div[class^='highlight'] pre {
   display: block;
 }
 .wy-menu-vertical li.toctree-l2.current > a {
-  background: #c9c9c9;
+  background: #E6B71D;
   padding: 0.4045em 2.427em;
 }
 .wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a {
   display: block;
-  background: #c9c9c9;
+  background: #E6B71D;
   padding: 0.4045em 4.045em;
 }
 .wy-menu-vertical li.toctree-l2 a:hover span.toctree-expand {
   color: gray;
 }
 .wy-menu-vertical li.toctree-l2 span.toctree-expand {
-  color: #a3a3a3;
+  color: #E6B71D;
 }
 .wy-menu-vertical li.toctree-l3 {
   font-size: 0.9em;
@@ -4398,15 +4402,17 @@ div[class^='highlight'] pre {
 .wy-menu-vertical a {
   display: inline-block;
   line-height: 18px;
-  padding: 0.4045em 1.618em;
+  padding: 0.809em 1.618em;
   display: block;
   position: relative;
-  font-size: 90%;
-  color: #b3b3b3;
+  font-size: 80%;
+  color: #0d81ab;
+  font-weight: 100;
 }
 .wy-menu-vertical a:hover {
-  background-color: #4e4a4a;
+  background-color: #E6B71D;
   cursor: pointer;
+  color: #fff;
 }
 .wy-menu-vertical a:hover span.toctree-expand {
   color: #b3b3b3;
@@ -4426,12 +4432,13 @@ div[class^='highlight'] pre {
   padding: 0.809em;
   margin-bottom: 0.809em;
   z-index: 200;
-  background-color: #2980B9;
+  background-color: #1A80A7;
   text-align: left;
   padding: 0.809em;
   display: block;
   color: #fcfcfc;
   margin-bottom: 0.809em;
+  font-weight: 100;
 }
 .wy-side-nav-search input[type=text] {
   width: 100%;
@@ -4451,7 +4458,7 @@ div[class^='highlight'] pre {
 .wy-side-nav-search > a, .wy-side-nav-search .wy-dropdown > a {
   color: #fcfcfc;
   font-size: 100%;
-  font-weight: bold;
+  font-weight: 100;
   display: inline-block;
   padding: 4px 6px;
   margin-bottom: 0.809em;
@@ -4535,7 +4542,7 @@ div[class^='highlight'] pre {
   overflow-x: hidden;
   overflow-y: hidden;
   min-height: 100%;
-  background: #343131;
+  background: #EEEEEE;
   z-index: 200;
 }
 
@@ -5174,6 +5181,43 @@ h2, .rst-content .toctree-wrapper p.caption {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-librato-marketing {
+  background-color: #0f80aa;
+  color: #fff !important;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  text-align: center;
+  margin-right: 10px;
+  padding: 7px 20px !important;
+}
+
+.btn-librato-marketing-yellow {
+  background-color: #DCAF1B;
+  color: #fff !important;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  text-align: center;
+  margin-right: 10px;
+  padding: 7px 20px;
+}
+
+.btn-librato {
+  background-color: #337AB7 !important;
+  background-color: #0f80aa !important;
+  color: #ffffff !important;
+  border: none;
+}
+
+.btn-librato:hover {
+  background-color: #2d6da3 !important;
+  background-color: #0d6e93 !important;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=theme.css.map */
