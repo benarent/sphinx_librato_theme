@@ -18,10 +18,8 @@
   <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
   {% endblock %}
 
-  {# FAVICON #}
-  {% if favicon %}
-    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
-  {% endif %}
+  <link rel="shortcut icon" href="{{ pathto('_static/img/favicon-blue.ico', 1) }}"/>
+
 
   {# CSS #}
 
