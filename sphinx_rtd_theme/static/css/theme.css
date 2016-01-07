@@ -4350,14 +4350,12 @@ div[class^='highlight'] pre {
   background: #DCDCDC;
   padding: 0.4045em 2.427em;
   color: #6F6F6F;
-  font-weight: 100;
 }
 .wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a {
   display: block;
   color: #555;
   background: #edf0f2;
   padding: 0.4045em 4.045em;
-  font-weight: 100;
 }
 .wy-menu-vertical li.toctree-l2 a:hover span.toctree-expand {
   color: gray;
@@ -4410,7 +4408,6 @@ div[class^='highlight'] pre {
   position: relative;
   font-size: 80%;
   color: #0d81ab;
-  font-weight: 100;
 }
 .wy-menu-vertical a:hover {
   background-color: #E6B71D;
