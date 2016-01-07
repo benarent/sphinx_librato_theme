@@ -43,7 +43,11 @@
   </div>
 
   {%- if show_sphinx %}
-  {% trans %}Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a fork of <a href="https://github.com/snide/sphinx_rtd_theme">sphinx_rtd_theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>{% endtrans %}.
+  {% trans %}
+  <p>Don’t have a Librato account? <a href="https://metrics.librato.com/sign_up">Sign up for a free trial.</a></p>
+  <div class="small-footer">Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a fork of <a href="https://github.com/snide/sphinx_rtd_theme">sphinx_rtd_theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  </div>
+  {% endtrans %}
   {%- endif %}
 
   {%- block extrafooter %} {% endblock %}

@@ -5221,4 +5221,11 @@ h2, .rst-content .toctree-wrapper p.caption {
   color: #ffffff;
 }
 
+.small-footer {
+  font-size: 12px;
+}
+.small-footer a {
+  color: #4A4A4A;
+}
+
 /*# sourceMappingURL=theme.css.map */
