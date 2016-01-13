@@ -4216,6 +4216,10 @@ div[class^='highlight'] pre {
   color: white;
 }
 
+.header-menu .active {
+  color: white;
+}
+
 .logo {
   width: 190px;
   height: 59px;
@@ -4537,6 +4541,7 @@ div[class^='highlight'] pre {
   position: absolute;
   bottom: 0;
   left: 0;
+  top: 0;
   padding-bottom: 2em;
   width: 300px;
   overflow-x: hidden;

@@ -102,7 +102,7 @@ function ThemeNav () {
         // Add expand links to all parents of nested ul
         $('.wy-menu-vertical ul').not('.simple').siblings('a').each(function () {
             var link = $(this);
-                expand = $('<span class="toctree-expand"></span>');
+                expand = $('<span class="toctree-expand"></span>');       
             expand.on('click', function (ev) {
                 self.toggleCurrent(link);
                 ev.stopPropagation();

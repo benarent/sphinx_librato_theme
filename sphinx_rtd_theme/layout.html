@@ -85,7 +85,7 @@
         <li><a href="https://www.librato.com/product">product</a></li>
         <li><a href="https://www.librato.com/customers">customers</a></li>
         <li><a href="https://www.librato.com/pricing">pricing</a></li>
-        <li><a href="http://dev.librato.com/v1">developers</a></li>
+        <li ><a class="active" href="https://www.librato.com/docs/kb">developers</a></li>
         <li><a href="http://blog.librato.com/">blog</a></li>
         <li><a href="https://metrics.librato.com/users/sign_in" class="btn-librato-marketing">sign in</a></li>
         <li><a href="https://metrics.librato.com/sign_up" class="btn-librato-marketing-yellow">try it</a></li>
@@ -96,8 +96,7 @@
 
     {# SIDE NAV, TOGGLES ON MOBILE #}
     <nav id="navside" data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+       <div class="wy-side-nav-search">
           {% block sidebartitle %}
           
           {% if logo and theme_logo_only %}
@@ -117,6 +116,8 @@
 
           {% endblock %}
         </div>
+      <div class="wy-side-scroll">
+       
 
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           {% block menu %}
