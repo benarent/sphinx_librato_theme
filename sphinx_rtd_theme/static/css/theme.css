@@ -4956,9 +4956,9 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   font-size: 100%;
 }
 .rst-content .highlighted {
-  background: #F1C40F;
+  background: #fff1c2;
   display: inline-block;
-  font-weight: bold;
+  font-weight: normal;
   padding: 0 6px;
 }
 .rst-content .footnote-reference, .rst-content .citation-reference {
