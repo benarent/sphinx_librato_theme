@@ -110,7 +110,7 @@ ul.fas li .fa-large:before {
   z-index: 400;
 }
 .rst-versions a {
-  color: #2980B9;
+  color: #0f80aa;
   text-decoration: none;
 }
 .rst-versions .rst-badge-small {
@@ -147,7 +147,7 @@ ul.fas li .fa-large:before {
   color: #fff;
 }
 .rst-versions .rst-current-version.rst-active-old-version {
-  background-color: #F1C40F;
+  background-color: #E5B722;
   color: #000;
 }
 .rst-versions.shift-up .rst-other-versions {
