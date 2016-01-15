@@ -99,7 +99,7 @@ function ThemeNav () {
         $("table.docutils:not(.field-list)")
             .wrap("<div class='wy-table-responsive'></div>");
 
-        
+      
     };
 
     nav.reset = function () {

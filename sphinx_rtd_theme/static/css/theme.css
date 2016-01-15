@@ -4325,7 +4325,6 @@ div[class^='highlight'] pre {
 .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a {
   color: #fff;
   padding: 0.809em 1.618em;
-  font-weight: bold;
   position: relative;
   background: #E6B71D;
   border: none;
@@ -4353,7 +4352,6 @@ div[class^='highlight'] pre {
 }
 .wy-menu-vertical li.toctree-l2.current > a {
   background: #DCDCDC;
-  padding: 0.4045em 2.427em;
   color: #6F6F6F;
 }
 .wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a {
@@ -4369,7 +4367,7 @@ div[class^='highlight'] pre {
   color: #edf0f2;
 }
 .wy-menu-vertical li.toctree-l3 {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 .wy-menu-vertical li.toctree-l3.current > a {
   background: #bdbdbd;
@@ -4388,7 +4386,7 @@ div[class^='highlight'] pre {
   color: #969696;
 }
 .wy-menu-vertical li.toctree-l4 {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 .wy-menu-vertical li.current ul {
   display: block;
@@ -5244,7 +5242,7 @@ h2, .rst-content .toctree-wrapper p.caption {
   font-size: 12px;
 }
 .small-footer a {
-  color: #4A4A4A;
+  color: #999;
 }
 
 /*# sourceMappingURL=theme.css.map */

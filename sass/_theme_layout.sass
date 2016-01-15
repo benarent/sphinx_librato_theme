@@ -112,7 +112,6 @@
   li.on a, li.current > a
     color: #fff
     padding: $gutter / 2 $gutter
-    font-weight: bold
     position: relative
     background: $librato-yellow
     border: none
@@ -142,7 +141,6 @@
     &.current
       > a
         background: #DCDCDC
-        padding: $gutter / 4 $gutter * 1.5
         color: #6F6F6F
       li.toctree-l3 > a
         display: block
@@ -154,7 +152,7 @@
     span.toctree-expand
       color: #edf0f2
   li.toctree-l3
-    font-size: .9em
+    font-size: 1em
     &.current
       > a
         background: darken($menu-vertical-background-color, 25%)
@@ -169,7 +167,7 @@
     span.toctree-expand
       color: darken($menu-vertical-background-color, 40%)
   li.toctree-l4
-    font-size: .9em
+    font-size: 1em
 
   li.current ul
     display: block
