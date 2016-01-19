@@ -328,7 +328,7 @@ big, small {
     page-break-after: avoid;
   }
 }
-.fa:before, .wy-menu-vertical li span.toctree-expand:before, .wy-menu-vertical li.on a span.toctree-expand:before, .wy-menu-vertical li.current > a span.toctree-expand:before, .rst-content .admonition-title:before, .rst-content h1 .headerlink:before, .rst-content h2 .headerlink:before, .rst-content h3 .headerlink:before, .rst-content h4 .headerlink:before, .rst-content h5 .headerlink:before, .rst-content h6 .headerlink:before, .rst-content dl dt .headerlink:before, .rst-content p.caption .headerlink:before, .rst-content tt.download span:first-child:before, .rst-content code.download span:first-child:before, .icon:before, .wy-dropdown .caret:before, .wy-inline-validate.wy-inline-validate-success .wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .wy-alert, .rst-content .note, .rst-content .attention, .rst-content .caution, .rst-content .danger, .rst-content .error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .warning, .rst-content .seealso, .rst-content .admonition-todo, .btn, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .header-menu a, .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a, .wy-menu-vertical a, .wy-menu-vertical a:hover, .wy-menu-vertical a:active, .wy-side-nav-search > a, .wy-side-nav-search .wy-dropdown > a, .wy-nav-top a {
+.fa:before, .wy-menu-vertical li span.toctree-expand:before, .wy-menu-vertical li.on a span.toctree-expand:before, .wy-menu-vertical li.current > a span.toctree-expand:before, .rst-content .admonition-title:before, .rst-content h1 .headerlink:before, .rst-content h2 .headerlink:before, .rst-content h3 .headerlink:before, .rst-content h4 .headerlink:before, .rst-content h5 .headerlink:before, .rst-content h6 .headerlink:before, .rst-content dl dt .headerlink:before, .rst-content p.caption .headerlink:before, .rst-content tt.download span:first-child:before, .rst-content code.download span:first-child:before, .icon:before, .wy-dropdown .caret:before, .wy-inline-validate.wy-inline-validate-success .wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .wy-alert, .rst-content .note, .rst-content .attention, .rst-content .caution, .rst-content .danger, .rst-content .error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .warning, .rst-content .seealso, .rst-content .admonition-todo, .btn, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .header-menu a, .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a, .wy-menu-vertical a, .wy-menu-vertical a:hover, .wy-menu-vertical a:active, .wy-side-nav-search > a, .wy-side-nav-search .wy-dropdown > a, .wy-nav-top a, .sub-nav li a {
   -webkit-font-smoothing: antialiased;
 }
 
@@ -4190,16 +4190,15 @@ div[class^='highlight'] pre {
   }
 }
 .librato-header {
-  height: 89px;
   background-color: #252525;
   padding-top: 15px;
-  padding-left: 15px;
 }
 
 .header-menu {
   float: right;
   padding-top: 8px;
   padding-right: 20px;
+  display: inline-block;
 }
 .header-menu li {
   display: inline-block;
@@ -4219,6 +4218,12 @@ div[class^='highlight'] pre {
   color: #999999;
 }
 
+.secound-menu {
+  height: 60px;
+  background-color: #1280A9;
+  width: 100%;
+}
+
 .header-menu .active {
   color: white;
 }
@@ -4227,6 +4232,7 @@ div[class^='highlight'] pre {
   width: 190px;
   height: 59px;
   margin-top: 6px;
+  padding-left: 15px;
 }
 
 .wy-affix {
@@ -4668,6 +4674,21 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   font-size: 90%;
 }
 
+@media screen and (max-width: 900px) {
+  .header-menu {
+    visibility: hidden;
+  }
+  .header-menu li {
+    visibility: hidden;
+    font-size: 10px;
+    margin-left: 0px;
+    display: none;
+  }
+  .header-menu .always-on {
+    visibility: visible;
+    display: inline-block;
+  }
+}
 @media screen and (max-width: 768px) {
   .wy-body-for-nav {
     background: #fcfcfc;
@@ -4675,6 +4696,17 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 
   .wy-nav-top {
     display: block;
+  }
+
+  .librato-header {
+    display: none;
+  }
+
+  .header-menu {
+    display: none;
+  }
+  .header-menu li {
+    display: none;
   }
 
   .wy-nav-side {
@@ -5180,10 +5212,6 @@ span[id*='MathJax-Span'] {
   font-weight: 400;
   src: local("Proxima Nova"), local("ProximaNova-Reg-webfont"), url(../fonts/proxima_nova/ProximaNova-Reg-webfont.ttf) format("truetype");
 }
-a:visited {
-  color: #0f80aa;
-}
-
 h1 {
   font-size: 2.5em;
   font-weight: 100;
@@ -5243,6 +5271,67 @@ h2, .rst-content .toctree-wrapper p.caption {
 }
 .small-footer a {
   color: #999;
+}
+
+.sub-nav {
+  background-color: #1280A9;
+  height: 60px;
+}
+.sub-nav ul {
+  list-style-type: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 15px;
+}
+.sub-nav .active {
+  border-bottom: 5px solid #1A9CC4;
+}
+.sub-nav li {
+  float: left;
+  margin-right: 15px;
+  line-height: 40px;
+}
+.sub-nav li a {
+  color: #fff;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  padding: 14px 16px;
+}
+.sub-nav li a:visited {
+  color: #fff !important;
+}
+
+.search-box {
+  float: right;
+  padding-top: 15px;
+  margin-right: 20px;
+}
+.search-box .icon {
+  padding: 6.5px;
+  padding-left: 8px;
+  margin-right: 0px;
+  background-color: #4199BA;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.search-box .icon i {
+  color: #C4DFEA;
+}
+.search-box .fa-search, .search-box .icon-search {
+  color: #C4DFEA;
+  font-size: 13px;
+}
+.search-box input[type=text] {
+  float: right;
+}
+
+a:visited {
+  color: #0f80aa;
 }
 
 /*# sourceMappingURL=theme.css.map */
