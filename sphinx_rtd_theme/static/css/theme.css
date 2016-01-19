@@ -4167,6 +4167,10 @@ div[class^='highlight'] pre {
 .wy-breadcrumbs li code.literal, .wy-breadcrumbs li .rst-content tt.literal, .rst-content .wy-breadcrumbs li tt.literal {
   color: #404040;
 }
+.wy-breadcrumbs li img {
+  margin-right: 10px;
+  width: 8px;
+}
 
 .wy-breadcrumbs-extra {
   margin-bottom: 0;
@@ -5308,6 +5312,9 @@ h2, .rst-content .toctree-wrapper p.caption {
   line-height: 40px;
   font-size: 14px;
 }
+.sub-nav li:hover {
+  border-bottom: 5px solid #1A9CC4;
+}
 .sub-nav li a {
   color: #fff;
   font-weight: bold;
@@ -5335,13 +5342,19 @@ h2, .rst-content .toctree-wrapper p.caption {
 }
 .search-box .icon i {
   color: #C4DFEA;
+  position: relative;
+  top: -1px;
+  left: -2px;
 }
 .search-box .fa-search, .search-box .icon-search {
   color: #C4DFEA;
-  font-size: 13px;
+  font-size: 14px;
 }
 .search-box input[type=text] {
   float: right;
+  width: 240px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 a:visited {
