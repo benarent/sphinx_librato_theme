@@ -117,7 +117,7 @@ ul.fas li .fa-large:before {
   display: none;
 }
 .rst-versions .rst-current-version {
-  padding: 11px;
+  padding: 10px;
   background-color: #272525;
   display: block;
   text-align: right;
@@ -155,7 +155,7 @@ ul.fas li .fa-large:before {
 }
 .rst-versions .rst-other-versions {
   font-size: 90%;
-  padding: 11px;
+  padding: 10px;
   color: gray;
   display: none;
 }
@@ -173,7 +173,7 @@ ul.fas li .fa-large:before {
 }
 .rst-versions .rst-other-versions dd a {
   display: inline-block;
-  padding: 5.5px;
+  padding: 5px;
   color: #fcfcfc;
 }
 .rst-versions.rst-badge {
@@ -203,7 +203,7 @@ ul.fas li .fa-large:before {
   width: auto;
   height: 30px;
   line-height: 30px;
-  padding: 0 5.5px;
+  padding: 0 5px;
   display: block;
   text-align: center;
 }

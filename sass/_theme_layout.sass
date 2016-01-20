@@ -174,12 +174,21 @@
         display: block
         border-top: none
         border-bottom: none
+        padding-left: 40px
+        &.current
+          > a
+            background: #F5F5F5
+            color: #1B86AE
     a:hover span.toctree-expand
       color: $menu-link-medium
     span.toctree-expand
       color: darken($menu-vertical-background-color, 40%)
   li.toctree-l4
     font-size: 14px
+    &.current
+      > a
+        background: #F5F5F5
+        color: #393939
 
   li.current ul
     display: block
