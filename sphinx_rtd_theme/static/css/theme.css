@@ -328,7 +328,7 @@ big, small {
     page-break-after: avoid;
   }
 }
-.fa:before, .wy-menu-vertical li span.toctree-expand:before, .wy-menu-vertical li.on a span.toctree-expand:before, .wy-menu-vertical li.current > a span.toctree-expand:before, .rst-content .admonition-title:before, .rst-content h1 .headerlink:before, .rst-content h2 .headerlink:before, .rst-content h3 .headerlink:before, .rst-content h4 .headerlink:before, .rst-content h5 .headerlink:before, .rst-content h6 .headerlink:before, .rst-content dl dt .headerlink:before, .rst-content p.caption .headerlink:before, .rst-content tt.download span:first-child:before, .rst-content code.download span:first-child:before, .icon:before, .wy-dropdown .caret:before, .wy-inline-validate.wy-inline-validate-success .wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .wy-alert, .rst-content .note, .rst-content .attention, .rst-content .caution, .rst-content .danger, .rst-content .error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .warning, .rst-content .seealso, .rst-content .admonition-todo, .btn, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .header-menu a, .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a, .wy-menu-vertical a, .wy-menu-vertical a:hover, .wy-menu-vertical a:active, .wy-side-nav-search > a, .wy-side-nav-search .wy-dropdown > a, .wy-nav-top a, .sub-nav li a {
+.fa:before, .wy-menu-vertical li span.toctree-expand:before, .wy-menu-vertical li.on a span.toctree-expand:before, .wy-menu-vertical li.current > a span.toctree-expand:before, .rst-content .admonition-title:before, .rst-content h1 .headerlink:before, .rst-content h2 .headerlink:before, .rst-content h3 .headerlink:before, .rst-content h4 .headerlink:before, .rst-content h5 .headerlink:before, .rst-content h6 .headerlink:before, .rst-content dl dt .headerlink:before, .rst-content p.caption .headerlink:before, .rst-content tt.download span:first-child:before, .rst-content code.download span:first-child:before, .icon:before, .wy-dropdown .caret:before, .wy-inline-validate.wy-inline-validate-success .wy-input-context:before, .wy-inline-validate.wy-inline-validate-danger .wy-input-context:before, .wy-inline-validate.wy-inline-validate-warning .wy-input-context:before, .wy-inline-validate.wy-inline-validate-info .wy-input-context:before, .wy-alert, .rst-content .note, .rst-content .attention, .rst-content .caution, .rst-content .danger, .rst-content .error, .rst-content .hint, .rst-content .important, .rst-content .tip, .rst-content .warning, .rst-content .seealso, .rst-content .admonition-todo, .btn, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .header-menu a, .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a, .wy-menu-vertical a, .wy-menu-vertical a:hover, .wy-menu-vertical a:active, .wy-side-nav-search > a, .wy-side-nav-search .wy-dropdown > a, .wy-nav-top a, h1, h2, .rst-content .toctree-wrapper p.caption, .sub-nav li a {
   -webkit-font-smoothing: antialiased;
 }
 
@@ -2612,7 +2612,7 @@ a .fa, a .wy-menu-vertical li span.toctree-expand, .wy-menu-vertical li a span.t
   background: #f3f6f6;
 }
 .wy-alert.wy-alert-neutral .wy-alert-title, .rst-content .wy-alert-neutral.note .wy-alert-title, .rst-content .wy-alert-neutral.attention .wy-alert-title, .rst-content .wy-alert-neutral.caution .wy-alert-title, .rst-content .wy-alert-neutral.danger .wy-alert-title, .rst-content .wy-alert-neutral.error .wy-alert-title, .rst-content .wy-alert-neutral.hint .wy-alert-title, .rst-content .wy-alert-neutral.important .wy-alert-title, .rst-content .wy-alert-neutral.tip .wy-alert-title, .rst-content .wy-alert-neutral.warning .wy-alert-title, .rst-content .wy-alert-neutral.seealso .wy-alert-title, .rst-content .wy-alert-neutral.admonition-todo .wy-alert-title, .wy-alert.wy-alert-neutral .rst-content .admonition-title, .rst-content .wy-alert.wy-alert-neutral .admonition-title, .rst-content .wy-alert-neutral.note .admonition-title, .rst-content .wy-alert-neutral.attention .admonition-title, .rst-content .wy-alert-neutral.caution .admonition-title, .rst-content .wy-alert-neutral.danger .admonition-title, .rst-content .wy-alert-neutral.error .admonition-title, .rst-content .wy-alert-neutral.hint .admonition-title, .rst-content .wy-alert-neutral.important .admonition-title, .rst-content .wy-alert-neutral.tip .admonition-title, .rst-content .wy-alert-neutral.warning .admonition-title, .rst-content .wy-alert-neutral.seealso .admonition-title, .rst-content .wy-alert-neutral.admonition-todo .admonition-title {
-  color: #404040;
+  color: #333;
   background: #e1e4e5;
 }
 .wy-alert.wy-alert-neutral a, .rst-content .wy-alert-neutral.note a, .rst-content .wy-alert-neutral.attention a, .rst-content .wy-alert-neutral.caution a, .rst-content .wy-alert-neutral.danger a, .rst-content .wy-alert-neutral.error a, .rst-content .wy-alert-neutral.hint a, .rst-content .wy-alert-neutral.important a, .rst-content .wy-alert-neutral.tip a, .rst-content .wy-alert-neutral.warning a, .rst-content .wy-alert-neutral.seealso a, .rst-content .wy-alert-neutral.admonition-todo a {
@@ -2788,14 +2788,14 @@ button[disabled] {
 
 .btn-neutral {
   background-color: #f3f6f6 !important;
-  color: #404040 !important;
+  color: #333 !important;
 }
 .btn-neutral:hover {
   background-color: #e5ebeb !important;
-  color: #404040;
+  color: #333;
 }
 .btn-neutral:visited {
-  color: #404040 !important;
+  color: #333 !important;
 }
 
 .btn-success {
@@ -2878,7 +2878,7 @@ button[disabled] {
   float: left;
   top: 100%;
   min-width: 100%;
-  background: #fcfcfc;
+  background: #fff;
   z-index: 100;
   border: solid 1px #cfd7dd;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
@@ -2887,7 +2887,7 @@ button[disabled] {
 .wy-dropdown-menu > dd > a {
   display: block;
   clear: both;
-  color: #404040;
+  color: #333;
   white-space: nowrap;
   font-size: 90%;
   padding: 0 10px;
@@ -2908,13 +2908,13 @@ button[disabled] {
   width: 100%;
 }
 .wy-dropdown-menu > dd.call-to-action {
-  background: #e3e3e3;
+  background: #e6e6e6;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 80%;
 }
 .wy-dropdown-menu > dd.call-to-action:hover {
-  background: #e3e3e3;
+  background: #e6e6e6;
 }
 .wy-dropdown-menu > dd.call-to-action .btn {
   color: #fff;
@@ -2928,7 +2928,7 @@ button[disabled] {
 }
 
 .wy-dropdown.wy-dropdown-bubble .wy-dropdown-menu {
-  background: #fcfcfc;
+  background: #fff;
   margin-top: 2px;
 }
 .wy-dropdown.wy-dropdown-bubble .wy-dropdown-menu a {
@@ -3261,7 +3261,7 @@ input[type="radio"][disabled], input[type="checkbox"][disabled] {
 
 .wy-checkbox, .wy-radio {
   margin: 5px 0;
-  color: #404040;
+  color: #333;
   display: block;
 }
 .wy-checkbox input, .wy-radio input {
@@ -3544,12 +3544,12 @@ input[type="radio"][disabled], input[type="checkbox"][disabled] {
 }
 
 .wy-table-secondary {
-  color: gray;
+  color: #737373;
   font-size: 90%;
 }
 
 .wy-table-tertiary {
-  color: gray;
+  color: #737373;
   font-size: 80%;
 }
 
@@ -3628,7 +3628,7 @@ html {
 body {
   font-family: "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
-  color: #404040;
+  color: #333;
   min-height: 100%;
   overflow-x: hidden;
   background: #edf0f2;
@@ -3695,11 +3695,11 @@ a.wy-text-danger:hover {
 }
 
 .wy-text-neutral {
-  color: #404040 !important;
+  color: #333 !important;
 }
 
 a.wy-text-neutral:hover {
-  color: #595959 !important;
+  color: #4d4d4d !important;
 }
 
 h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
@@ -3854,7 +3854,7 @@ div[class^='highlight'] td.code {
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
   font-size: 12px;
   line-height: 1.5;
-  color: #d9d9d9;
+  color: #cccccc;
 }
 
 div[class^='highlight'] pre {
@@ -3866,7 +3866,7 @@ div[class^='highlight'] pre {
   line-height: 1.5;
   display: block;
   overflow: auto;
-  color: #404040;
+  color: #333;
 }
 
 @media print {
@@ -4165,7 +4165,7 @@ div[class^='highlight'] pre {
   background: none;
 }
 .wy-breadcrumbs li code.literal, .wy-breadcrumbs li .rst-content tt.literal, .rst-content .wy-breadcrumbs li tt.literal {
-  color: #404040;
+  color: #333;
 }
 .wy-breadcrumbs li img {
   margin-right: 10px;
@@ -4174,7 +4174,7 @@ div[class^='highlight'] pre {
 
 .wy-breadcrumbs-extra {
   margin-bottom: 0;
-  color: #b3b3b3;
+  color: #a6a6a6;
   font-size: 80%;
   display: inline-block;
 }
@@ -4307,7 +4307,7 @@ div[class^='highlight'] pre {
   border-bottom: solid 1px #404040;
 }
 .wy-menu-vertical li.current {
-  background: #e3e3e3;
+  background: #e6e6e6;
 }
 .wy-menu-vertical li.current a {
   color: #fff;
@@ -4329,7 +4329,7 @@ div[class^='highlight'] pre {
   float: left;
   margin-left: -1.2em;
   line-height: 1.6em;
-  color: #4d4d4d;
+  color: #404040;
 }
 .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a {
   color: #fff;
@@ -4343,12 +4343,12 @@ div[class^='highlight'] pre {
   color: #fff;
 }
 .wy-menu-vertical li.on a:hover span.toctree-expand, .wy-menu-vertical li.current > a:hover span.toctree-expand {
-  color: gray;
+  color: #737373;
 }
 .wy-menu-vertical li.on a span.toctree-expand, .wy-menu-vertical li.current > a span.toctree-expand {
   display: block;
   line-height: 1.6em;
-  color: #333333;
+  color: #262626;
 }
 .wy-menu-vertical li.toctree-l1 {
   border-bottom: 1px solid #E0E0E0;
@@ -4407,10 +4407,10 @@ div[class^='highlight'] pre {
   color: #1B86AE;
 }
 .wy-menu-vertical li.toctree-l3 a:hover span.toctree-expand {
-  color: gray;
+  color: #737373;
 }
 .wy-menu-vertical li.toctree-l3 span.toctree-expand {
-  color: #969696;
+  color: #999999;
 }
 .wy-menu-vertical li.toctree-l4 {
   font-size: 14px;
@@ -4431,7 +4431,7 @@ div[class^='highlight'] pre {
 }
 .wy-menu-vertical li ul li a {
   margin-bottom: 0;
-  color: #b3b3b3;
+  color: #a6a6a6;
   font-weight: normal;
 }
 .wy-menu-vertical a {
@@ -4449,7 +4449,7 @@ div[class^='highlight'] pre {
   color: #1B86AE;
 }
 .wy-menu-vertical a:hover span.toctree-expand {
-  color: #b3b3b3;
+  color: #a6a6a6;
 }
 .wy-menu-vertical a:active {
   background-color: #0f80aa;
@@ -4470,7 +4470,7 @@ div[class^='highlight'] pre {
   text-align: left;
   padding: 0.809em;
   display: block;
-  color: #fcfcfc;
+  color: #fff;
   margin-bottom: 0.809em;
   font-weight: 100;
 }
@@ -4490,7 +4490,7 @@ div[class^='highlight'] pre {
   border-radius: 100%;
 }
 .wy-side-nav-search > a, .wy-side-nav-search .wy-dropdown > a {
-  color: #fcfcfc;
+  color: #fff;
   font-size: 100%;
   font-weight: 100;
   display: inline-block;
@@ -4526,7 +4526,7 @@ div[class^='highlight'] pre {
   color: #0f80aa;
 }
 .wy-nav .wy-menu-vertical a {
-  color: #b3b3b3;
+  color: #a6a6a6;
 }
 .wy-nav .wy-menu-vertical a:hover {
   background-color: #0f80aa;
@@ -4559,7 +4559,7 @@ div[class^='highlight'] pre {
 }
 
 .wy-body-for-nav {
-  background: left repeat-y #fcfcfc;
+  background: left repeat-y #fff;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxOERBMTRGRDBFMUUxMUUzODUwMkJCOThDMEVFNURFMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxOERBMTRGRTBFMUUxMUUzODUwMkJCOThDMEVFNURFMCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjE4REExNEZCMEUxRTExRTM4NTAyQkI5OEMwRUU1REUwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjE4REExNEZDMEUxRTExRTM4NTAyQkI5OEMwRUU1REUwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+EwrlwAAAAA5JREFUeNpiMDU0BAgwAAE2AJgB9BnaAAAAAElFTkSuQmCC);
   background-size: 300px 1px;
 }
@@ -4631,7 +4631,7 @@ div[class^='highlight'] pre {
 
 .wy-nav-content-wrap {
   margin-left: 300px;
-  background: #fcfcfc;
+  background: #fff;
   min-height: 100%;
 }
 
@@ -4695,7 +4695,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   display: inline-block;
 }
 #search-results .context {
-  color: gray;
+  color: #737373;
   font-size: 90%;
 }
 
@@ -4716,7 +4716,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 }
 @media screen and (max-width: 768px) {
   .wy-body-for-nav {
-    background: #fcfcfc;
+    background: #fff;
   }
 
   .wy-nav-top {
@@ -4776,7 +4776,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 
   .wy-nav-content {
     margin: 0;
-    background: #fcfcfc;
+    background: #fff;
   }
 }
 @media print {
@@ -4793,7 +4793,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   bottom: 0;
   left: 0;
   width: 300px;
-  color: #fcfcfc;
+  color: #fff;
   background: #1f1d1d;
   border-top: solid 10px #343131;
   font-family: "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
@@ -4824,7 +4824,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   clear: both;
 }
 .rst-versions .rst-current-version .fa, .rst-versions .rst-current-version .wy-menu-vertical li span.toctree-expand, .wy-menu-vertical li .rst-versions .rst-current-version span.toctree-expand, .rst-versions .rst-current-version .rst-content .admonition-title, .rst-content .rst-versions .rst-current-version .admonition-title, .rst-versions .rst-current-version .rst-content h1 .headerlink, .rst-content h1 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h2 .headerlink, .rst-content h2 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h3 .headerlink, .rst-content h3 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h4 .headerlink, .rst-content h4 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h5 .headerlink, .rst-content h5 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h6 .headerlink, .rst-content h6 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content dl dt .headerlink, .rst-content dl dt .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content p.caption .headerlink, .rst-content p.caption .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content tt.download span:first-child, .rst-content tt.download .rst-versions .rst-current-version span:first-child, .rst-versions .rst-current-version .rst-content code.download span:first-child, .rst-content code.download .rst-versions .rst-current-version span:first-child, .rst-versions .rst-current-version .icon {
-  color: #fcfcfc;
+  color: #fff;
 }
 .rst-versions .rst-current-version .fa-book, .rst-versions .rst-current-version .icon-book {
   float: left;
@@ -4846,7 +4846,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 .rst-versions .rst-other-versions {
   font-size: 90%;
   padding: 10px;
-  color: gray;
+  color: #737373;
   display: none;
 }
 .rst-versions .rst-other-versions hr {
@@ -4864,7 +4864,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 .rst-versions .rst-other-versions dd a {
   display: inline-block;
   padding: 5px;
-  color: #fcfcfc;
+  color: #fff;
 }
 .rst-versions.rst-badge {
   width: auto;
@@ -4967,7 +4967,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   margin-bottom: 10px;
 }
 .rst-content .toc-backref {
-  color: #404040;
+  color: #333;
 }
 .rst-content .align-right {
   float: right;
@@ -5081,7 +5081,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 }
 .rst-content tt.xref, a .rst-content tt, .rst-content tt.xref, .rst-content code.xref, a .rst-content tt, a .rst-content code {
   font-weight: bold;
-  color: #404040;
+  color: #333;
 }
 .rst-content a tt, .rst-content a tt, .rst-content a code {
   color: #0f80aa;
@@ -5116,7 +5116,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   color: #32baed;
 }
 .rst-content dl:not(.docutils) dt .headerlink {
-  color: #404040;
+  color: #333;
   font-size: 100% !important;
 }
 .rst-content dl:not(.docutils) dl dt {
@@ -5127,7 +5127,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   color: #555;
 }
 .rst-content dl:not(.docutils) dl dt .headerlink {
-  color: #404040;
+  color: #333;
   font-size: 100% !important;
 }
 .rst-content dl:not(.docutils) dt:first-child {
@@ -5188,7 +5188,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   }
 }
 span[id*='MathJax-Span'] {
-  color: #404040;
+  color: #333;
 }
 
 .math {
@@ -5238,18 +5238,13 @@ span[id*='MathJax-Span'] {
   src: local("Proxima Nova"), local("ProximaNova-Reg-webfont"), url(../fonts/proxima_nova/ProximaNova-Reg-webfont.ttf) format("truetype");
 }
 h1 {
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 100;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 h2, .rst-content .toctree-wrapper p.caption {
-  font-weight: 100;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 .btn-librato-marketing {
@@ -5372,6 +5367,10 @@ h2, .rst-content .toctree-wrapper p.caption {
 
 a:visited {
   color: #0f80aa;
+}
+
+p {
+  line-height: 1.6;
 }
 
 /*# sourceMappingURL=theme.css.map */
