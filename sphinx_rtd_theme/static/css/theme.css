@@ -4200,7 +4200,7 @@ div[class^='highlight'] pre {
 
 .header-menu {
   float: right;
-  padding-top: 8px;
+  padding-top: 6px;
   padding-right: 20px;
   display: inline-block;
 }
@@ -5301,6 +5301,7 @@ h2, .rst-content .toctree-wrapper p.caption {
 .sub-nav {
   background-color: #1280A9;
   height: 60px;
+  margin-top: 9px;
 }
 .sub-nav ul {
   list-style-type: none;
@@ -5340,6 +5341,7 @@ h2, .rst-content .toctree-wrapper p.caption {
   float: right;
   padding-top: 15px;
   margin-right: 20px;
+  border: none;
 }
 .search-box .icon {
   padding: 6.5px;
@@ -5364,6 +5366,8 @@ h2, .rst-content .toctree-wrapper p.caption {
   width: 240px;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
+  border: none;
+  height: 29px;
 }
 
 a:visited {
