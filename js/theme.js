@@ -84,6 +84,7 @@ function ThemeNav () {
             .on('click', ".wy-menu-vertical .current ul li a", function() {
                 var target = $(this);
                 // Close menu when you click a link.
+                //console.log("clicked link")
                 $("[data-toggle='wy-nav-shift']").removeClass("shift");
                 $("[data-toggle='rst-versions']").toggleClass("shift");
                 // Handle dynamic display of l3 and l4 nav lists
@@ -92,6 +93,7 @@ function ThemeNav () {
             })
             .on('click', "[data-toggle='rst-current-version']", function() {
                 $("[data-toggle='rst-versions']").toggleClass("shift-up");
+                console.log("shift up link")
             })
 
         // Make tables responsive
@@ -147,6 +149,8 @@ function ThemeNav () {
     };
 
     nav.toggleCurrent = function (elem) {
+        console.log(elem)
+
         var parent_li = elem.closest('li');
         parent_li.siblings('li.current').removeClass('current');
         parent_li.siblings().find('li.current').removeClass('current');

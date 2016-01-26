@@ -5365,6 +5365,10 @@ h2, .rst-content .toctree-wrapper p.caption {
   height: 29px;
 }
 
+.intercom-launcher .intercom-launcher-hovercard {
+  display: none !important;
+}
+
 a:visited {
   color: #0f80aa;
 }
