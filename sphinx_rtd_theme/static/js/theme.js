@@ -99,17 +99,7 @@ function ThemeNav () {
         $("table.docutils:not(.field-list)")
             .wrap("<div class='wy-table-responsive'></div>");
 
-        // Add expand links to all parents of nested ul
-        $('.wy-menu-vertical ul').not('.simple').siblings('a').each(function () {
-            var link = $(this);
-                expand = $('<span class="toctree-expand"></span>');
-            expand.on('click', function (ev) {
-                self.toggleCurrent(link);
-                ev.stopPropagation();
-                return false;
-            });
-            link.prepend(expand);
-        });
+      
     };
 
     nav.reset = function () {
