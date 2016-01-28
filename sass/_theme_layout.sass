@@ -1,13 +1,12 @@
 .librato-header
-  height: 80px
-  background-color: #262626
-  padding-top: 10px
-  padding-left: 10px
+  background-color: #252525
+  padding-top: 15px
 
 .header-menu 
   float: right
-  padding-top: 10px
+  padding-top: 6px
   padding-right: 20px
+  display: inline-block
   li
     display: inline-block
   a
@@ -20,13 +19,23 @@
     +font-smooth
     &:hover
       color: lighten($menu-vertical-background-color, 15%)
+    &:visited
+      color: #999999
+
+.secound-menu
+  height: 60px
+  background-color: #1280A9
+  width: 100%
+
+
+.header-menu .active
+  color: lighten($menu-vertical-background-color, 15%)
 
 .logo
   width: 190px
   height: 59px
-  margin-top: 5px
-  padding-top: 5px
-  padding-left: 5px
+  margin-top: 6px
+  padding-left: 15px
 
 .wy-affix
   position: fixed
@@ -64,9 +73,13 @@
     display: block
     font-weight: bold
     text-transform: uppercase
-    font-size: 80%
+    font-size: 14px
     color: $menu-color
     white-space: nowrap
+    text-rendering: auto
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    font-weight: 200
 
   ul
     margin-bottom: 0
@@ -78,11 +91,11 @@
     &.current
       background: darken($menu-vertical-background-color, 10%)
       a
-        color: $menu-link-medium
-        border-right: solid 1px darken($menu-vertical-background-color, 20%)
-        padding: $gutter / 4 $gutter * 1.5
+        color: #fff
+        background-color: #F5F5F5        
         &:hover
-          background: darken($menu-vertical-background-color, 15%)
+          color: #1280A9
+          background-color: #e0e0e0    
     code
       border: none
       background: inherit
@@ -96,33 +109,35 @@
       margin-left: -1.2em
       @extend .fa
       @extend .fa-plus-square-o
-      font-size: .8em
       line-height: 1.6em
       color: darken($menu-link-medium, 20%)
 
   // On state for the first level
   li.on a, li.current > a
-    color: $menu-link-color
-    padding: $gutter / 4 $gutter
-    font-weight: bold
+    color: #fff
+    padding: $gutter / 2 $gutter
     position: relative
-    background: $menu-vertical-background-color
-    border: none
-    border-bottom: solid 1px darken($menu-vertical-background-color, 20%)
-    border-top: solid 1px darken($menu-vertical-background-color, 20%)
+    background: $librato-yellow
     padding-left: $gutter -4px
     +font-smooth
     &:hover
-      background: $menu-vertical-background-color
+      background: $librato-yellow
+      color: #fff
       span.toctree-expand
         color: $menu-link-medium
     span.toctree-expand
       @extend .fa
       @extend .fa-minus-square-o
       display: block
-      font-size: .8em
       line-height: 1.6em
       color: darken($menu-link-medium, 30%)
+
+  li.toctree-l1
+    border-bottom: 1px solid #E0E0E0
+    &:first-child
+      border-top: 1px solid #E0E0E0
+    &:last-child
+      border-bottom: 1px solid #E0E0E0
 
   // This is the on state for pages beyond second level
   li.toctree-l1.current li.toctree-l2, li.toctree-l2.current li.toctree-l3
@@ -131,36 +146,49 @@
     &.current > ul
       display: block
   li.toctree-l2
+    color: #1B86AE
+    a 
+      color: #1B86AE
     &.current
       > a
-        background: darken($menu-vertical-background-color, 20%)
-        padding: $gutter / 4 $gutter * 1.5
+        background: #F5F5F5
+        color: #393939
       li.toctree-l3 > a
         display: block
-        background: darken($menu-vertical-background-color, 20%)
-        padding: $gutter / 4 $gutter * 2.5
-    a:hover span.toctree-expand
-      color: $menu-link-medium
-    span.toctree-expand
-      color: darken($menu-vertical-background-color, 35%)
-  li.toctree-l3
-    font-size: .9em
-    &.current
-      > a
-        background: darken($menu-vertical-background-color, 25%)
-        padding: $gutter / 4 $gutter * 2.5
-      li.toctree-l4 > a
-        display: block
-        background: darken($menu-vertical-background-color, 25%)
-        padding: $gutter / 4 $gutter * 3.5
+        color: #1B86AE
+        background: #FBFBFB
+        padding-left: 40px
         border-top: none
         border-bottom: none
+    a:hover span.toctree-expand
+      color: #000
+    span.toctree-expand
+      color: #edf0f2
+  li.toctree-l3
+    font-size: 14px
+    &.current
+      > a
+        background: #F5F5F5
+        color: #1B86AE
+      li.toctree-l4 > a
+        display: block
+        border-top: none
+        border-bottom: none
+        padding-left: 40px
+        &.current
+          > a
+            background: #F5F5F5
+            color: #1B86AE
     a:hover span.toctree-expand
       color: $menu-link-medium
     span.toctree-expand
       color: darken($menu-vertical-background-color, 40%)
   li.toctree-l4
-    font-size: .9em
+    font-size: 14px
+    &.current
+      > a
+        background: #F5F5F5
+        color: #393939
 
   li.current ul
     display: block
@@ -177,22 +205,27 @@
   a
     display: inline-block
     line-height: 18px
-    padding: $gutter / 4 $gutter
+    padding: $gutter / 2 $gutter
     display: block
     position: relative
-    font-size: 90%
-    color: $menu-link-light
+    font-size: 14px
+    color: #0d81ab
+    +font-smooth
     &:hover
-      background-color: lighten($menu-background-color, 10%)
+      background-color: #e0e0e0
       cursor: pointer
+      color: #1B86AE
+      +font-smooth
       span.toctree-expand
         color: $menu-link-light
     &:active
       background-color: $menu-logo-color
       cursor: pointer
       color: $menu-link-active
+      +font-smooth
       span.toctree-expand
         color: $menu-link-active
+
 
 .wy-side-nav-search
   display: block
@@ -206,9 +239,10 @@
   display: block
   color: $nav-search-color
   margin-bottom: $gutter / 2
+  font-weight: 100
   input[type=text]
     width: 100%
-    border-radius: 50px
+    border-radius: 5px
     padding: 6px 12px
     border-color: darken($link-color, 5%)
   img
@@ -222,13 +256,15 @@
   > a, .wy-dropdown > a
     color: $nav-search-color
     font-size: 100%
-    font-weight: bold
+    font-weight: 100
     display: inline-block
     padding: $base-line-height / 6 $base-line-height / 4
     margin-bottom: $gutter / 2
     +font-smooth
     &:hover
       background: rgba(255,255,255,.1)
+    &:visited
+      color: #fff
     img.logo
       display: block  // display on its own line all the time
       margin: 0 auto
@@ -290,12 +326,13 @@
   position: absolute
   bottom: 0
   left: 0
+  top: 0
   padding-bottom: 2em
   width: $nav-desktop-width
   overflow-x: hidden
   overflow-y: hidden
   min-height: 100%
-  background: $nav-background-color
+  background: #EAEAEA
   z-index: $z-index-popover
 
 .wy-side-scroll
@@ -330,6 +367,7 @@
     font-size: 30px
     float: left
     cursor: pointer
+    padding-top: 11px
 
 .wy-nav-content-wrap
   margin-left: $nav-desktop-width
@@ -382,12 +420,29 @@ footer
     color: $text-medium
     font-size: 90%
 
++media(new-breakpoint(max-width 900px 8))
+  .header-menu
+    visibility: hidden
+    li
+      visibility: hidden
+      font-size: 10px
+      margin-left: 0px
+      display: none
+    .always-on
+      visibility: visible
+      display: inline-block
 
 +media($tablet)
   .wy-body-for-nav
     background: $section-background-color
   .wy-nav-top
     display: block
+  .librato-header
+    display: none
+  .header-menu
+    display: none
+    li
+      display: none
   .wy-nav-side
     @if $nav-desktop-position == left
       left: -$nav-desktop-width

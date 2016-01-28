@@ -51,7 +51,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Sphinx RTD theme demo'
-copyright = u'2013, Dave Snider'
+copyright = u'2016, Dave Snider'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

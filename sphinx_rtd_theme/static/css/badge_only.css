@@ -103,21 +103,21 @@ ul.fas li .fa-large:before {
   bottom: 0;
   left: 0;
   width: 300px;
-  color: #fcfcfc;
+  color: #fff;
   background: #1f1d1d;
   border-top: solid 10px #343131;
   font-family: "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
   z-index: 400;
 }
 .rst-versions a {
-  color: #2980B9;
+  color: #0f80aa;
   text-decoration: none;
 }
 .rst-versions .rst-badge-small {
   display: none;
 }
 .rst-versions .rst-current-version {
-  padding: 12px;
+  padding: 10px;
   background-color: #272525;
   display: block;
   text-align: right;
@@ -134,7 +134,7 @@ ul.fas li .fa-large:before {
   clear: both;
 }
 .rst-versions .rst-current-version .fa {
-  color: #fcfcfc;
+  color: #fff;
 }
 .rst-versions .rst-current-version .fa-book {
   float: left;
@@ -147,7 +147,7 @@ ul.fas li .fa-large:before {
   color: #fff;
 }
 .rst-versions .rst-current-version.rst-active-old-version {
-  background-color: #F1C40F;
+  background-color: #E5B722;
   color: #000;
 }
 .rst-versions.shift-up .rst-other-versions {
@@ -155,8 +155,8 @@ ul.fas li .fa-large:before {
 }
 .rst-versions .rst-other-versions {
   font-size: 90%;
-  padding: 12px;
-  color: gray;
+  padding: 10px;
+  color: #737373;
   display: none;
 }
 .rst-versions .rst-other-versions hr {
@@ -173,8 +173,8 @@ ul.fas li .fa-large:before {
 }
 .rst-versions .rst-other-versions dd a {
   display: inline-block;
-  padding: 6px;
-  color: #fcfcfc;
+  padding: 5px;
+  color: #fff;
 }
 .rst-versions.rst-badge {
   width: auto;
@@ -203,7 +203,7 @@ ul.fas li .fa-large:before {
   width: auto;
   height: 30px;
   line-height: 30px;
-  padding: 0 6px;
+  padding: 0 5px;
   display: block;
   text-align: center;
 }

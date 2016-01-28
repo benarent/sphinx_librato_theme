@@ -18,10 +18,8 @@
   <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
   {% endblock %}
 
-  {# FAVICON #}
-  {% if favicon %}
-    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
-  {% endif %}
+  <link rel="shortcut icon" href="{{ pathto('_static/img/favicon-blue.ico', 1) }}"/>
+
 
   {# CSS #}
 
@@ -59,7 +57,7 @@
         <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}"/>
     {%- endif %}
     {%- if hasdoc('copyright') %}
-        <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}"/>
+        <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}"/> :-) 
     {%- endif %}
     <link rel="top" title="{{ docstitle|e }}" href="{{ pathto('index') }}"/>
     {%- if parents %}
@@ -81,46 +79,34 @@
 
 <body class="wy-body-for-nav" role="document">
   <div id="mainheader" class="librato-header">
-    <img src="https://www.librato.com/images/librato-solarwind-logo.svg" class="logo"/>
+    <a href="https://www.librato.com"><img src="{{ pathto('_static/img/librato-solarwind-logo.svg', 1) }}" class="logo"/></a>
     <div class="header-menu">
       <ul>
         <li><a href="https://www.librato.com/product">product</a></li>
         <li><a href="https://www.librato.com/customers">customers</a></li>
         <li><a href="https://www.librato.com/pricing">pricing</a></li>
-        <li><a href="http://dev.librato.com/v1">developers</a></li>
+        <li ><a class="active" href="https://www.librato.com/docs/kb">documentation</a></li>
         <li><a href="http://blog.librato.com/">blog</a></li>
-        <li><a href="https://metrics.librato.com/users/sign_in" class="btn-librato-marketing">sign in</a></li>
-        <li><a href="https://metrics.librato.com/sign_up" class="btn-librato-marketing-yellow">try it</a></li>
+        <li class="always-on"><a href="https://metrics.librato.com/users/sign_in" class="btn-librato-marketing">sign in</a></li>
+        <li class="always-on"><a href="https://metrics.librato.com/sign_up" class="btn-librato-marketing-yellow">try it</a></li>
       </ul>
+    </div>
+    <div class="sub-nav"> 
+      <ul>
+        <li class="active"><a class="active" href="https://www.librato.com/docs/kb/">Knowledge Base</a></li>
+        <li><a href="https://www.librato.com/docs/api/">API Documentation</a></li>
+      </ul>
+      <div class="search-box">
+        {% include "searchbox.html" %}
+      </div>
     </div>
    </div>
     <div class="wy-grid-for-nav">
 
     {# SIDE NAV, TOGGLES ON MOBILE #}
     <nav id="navside" data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
-          {% block sidebartitle %}
-          
-          {% if logo and theme_logo_only %}
-            <a href="{{ pathto(master_doc) }}">
-          {% else %}
-            <a href="{{ pathto(master_doc) }}" class="icon icon-home"> {{ project }}
-          {% endif %}
-          
-          {% if logo %}
-            {# Not strictly valid HTML, but it's the only way to display/scale it properly, without weird scripting or heaps of work #}
-            <img src="{{ pathto('_static/' + logo, 1) }}" class="logo" />
-          {% endif %}
-          </a>
-
-
-          {% include "searchbox.html" %}
-
-          {% endblock %}
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+       <div class="wy-side-scroll">
+       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           {% block menu %}
             {% set toctree = toctree(maxdepth=4, collapse=theme_collapse_navigation, includehidden=True) %}
             {% if toctree %}
